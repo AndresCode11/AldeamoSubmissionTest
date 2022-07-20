@@ -35,7 +35,7 @@ curl -X 'POST' \
 ``` 
 
 ## Estructura del proyecto
-El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se muestra la estructura de los archivos que se trabajaron, la funcion de sus carpetas.
+El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se muestra la estructura de los archivos que se trabajaron, y como se estructuro el proyecto.
 ``` 
 📦src
  ┣ 📂main
