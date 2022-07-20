@@ -8,16 +8,19 @@ La Aplicación se encuentra desplegada en Heroku en la url: [https://aldeamopabl
 * Hay una especificación OpenAPI, usando una interfaz de usuario de Swagger.
 
 ### Local
-En caso de querer desplegar la aplicacion en un entorno local, este debe contar con `Java 11` , la base de datos esta desplegada en AWS **(usuario de prueba)**
+En caso de querer desplegar la aplicacion en un entorno local, este debe contar con `Java 11` y tener Maven, adicionalemte tener el puerto **8080** habilitado en caso de tener otro puerto sep uede modificar **aplication.properties**, la base de datos esta desplegada en AWS **(usuario de prueba)**
 
 ```
 spring.datasource.url=jdbc:mysql://database-1.c6gsc5cni4xv.us-west-2.rds.amazonaws.com:3306/aldeamo_test
 spring.datasource.username=aldeamouser
 spring.datasource.password=password
 ```
+* 1: Clonar el repositorio
+* 2: Acceder a el archivo clonado
+* 3: Ejecutar el comando mvn `spring-boot:run`
 
 
-## Consumo de la API
+## Consumo de la API [Documentacion de API](https://aldeamopablotest.herokuapp.com/swagger-ui/index.html#)
 
 * Ejemplo usando Curl:
 ``` 
