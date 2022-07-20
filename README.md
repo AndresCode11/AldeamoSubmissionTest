@@ -35,7 +35,7 @@ curl -X 'POST' \
 ``` 
 
 ## Estructura del proyecto
-El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se muestra la estructura de los archivos que se trabajaron.
+El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se muestra la estructura de los archivos que se trabajaron, la funcion de sus carpetas.
 ``` 
 📦src
  ┣ 📂main
@@ -61,7 +61,7 @@ El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se mue
  ┃ ┃ ┗ 📜application.properties
 ```
 
-* **Controllers/**:  
-* **Helpers/** : 
+* **Controllers/** : Recibe los eventos de entrada mediante HTTP, Contiene reglas de gestión de eventos.
+* **Helpers/** : Clases o Interfaces reutilizables para el proyecto.
 * **Models/** :
-* **Repositories/**: 
+* **Repositories/**: Enlaza los modelos para realizar consultas.
