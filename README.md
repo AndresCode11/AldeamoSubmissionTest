@@ -35,6 +35,7 @@ curl -X 'POST' \
 ``` 
 
 ## Estructura del proyecto
+El proyecto usa por defecto  la estructura de SprinhBoot, en este caso se muestra la estructura de los archivos que se trabajaron.
 ``` 
 📦src
  ┣ 📂main
@@ -60,7 +61,7 @@ curl -X 'POST' \
  ┃ ┃ ┗ 📜application.properties
 ```
 
-* **Controllers**: 
-* **Helpers** : 
-* **Models** :
-* **Repositories**: 
+* **Controllers/**:  
+* **Helpers/** : 
+* **Models/** :
+* **Repositories/**: 
