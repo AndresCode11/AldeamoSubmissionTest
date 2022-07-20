@@ -9,6 +9,20 @@ La Aplicación se encuentra desplegada en Heroku en la url: [https://aldeamopabl
 
 ### 
 
+##Consumo de la API
+
+* Ejemplo Curl:
+``` 
+curl -X 'POST' \
+  'https://aldeamopablotest.herokuapp.com/api/v1/input_array/sort' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 6,
+  "iterations": 10
+}'
+``` 
+
 ## Estructura del proyecto
 ``` 
 📦src
