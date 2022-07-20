@@ -8,8 +8,9 @@ La Aplicación se encuentra desplegada en Heroku en la url: [https://aldeamopabl
 * Hay una especificación OpenAPI, usando una interfaz de usuario de Swagger.
 
 ### Local
-En caso de querer desplegar la aplicacion en un entorno local, este debe contar con `Java 11` , la base de datos esta desplegada en AWS 
-```xml
+En caso de querer desplegar la aplicacion en un entorno local, este debe contar con `Java 11` , la base de datos esta desplegada en AWS **(usuario de prueba)**
+
+```
 spring.datasource.url=jdbc:mysql://database-1.c6gsc5cni4xv.us-west-2.rds.amazonaws.com:3306/aldeamo_test
 spring.datasource.username=aldeamouser
 spring.datasource.password=password
