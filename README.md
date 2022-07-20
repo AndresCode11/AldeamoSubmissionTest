@@ -35,7 +35,7 @@ curl -X 'POST' \
 ``` 
 
 ## Estructura del proyecto
-El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se muestra la estructura de los archivos que se trabajaron, y como es la estructura del proyecto.
+El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se muestra la estructura de los archivos que se trabajaron, y como es la estructura del proyecto [link](https://github.com/AndresCode11/AldeamoSubmissionTest/tree/main/src/main/java/com/example/demo).
 ``` 
 📦src
  ┣ 📂main
