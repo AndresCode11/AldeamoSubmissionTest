@@ -19,15 +19,32 @@ public class ArraysService {
 
     ArrayOperations arrayOperations = new ArrayOperations();
 
+    /**
+     * Retorna todos elementos de el modelo InputArray
+     * @Return Objeto de el modelo InputArrayModel
+     * */
     public ArrayList<InputArrayModel> getArrays() {
+
         return (ArrayList<InputArrayModel>)arraysRepository.findAll();
     }
 
+    /**
+     * Retorna el modelo InputArray filtrado por ID
+     * @param  id ID de el modelo InputArray
+     * @return Objeto InputArrayModel
+     * */
     public Optional<InputArrayModel> getByID(Long id) {
         return arraysRepository.findById(id);
     }
 
+    /**
+     * Retorna los elementos ordenados de acuerdo a la logica del algortimo
+     * @param orders Array de los elementos a ordenar
+     * @param iterations Numero de iteraciones a realizar
+     * @return Elementos ordenados en ArrayList<Integer>
+     * */
     public ArrayList<Integer> order(String[] orders, int iterations) {
+
         int[] ordersInt = this.arrayOperations.parseArrayToInteger(orders);
         this.arrayOperations.reverseArray(ordersInt);
         ArrayList<Integer> result = new ArrayList<Integer>();

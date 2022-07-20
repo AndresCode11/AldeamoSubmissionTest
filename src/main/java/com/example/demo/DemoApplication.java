@@ -21,6 +21,9 @@ import java.util.List;
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	/**
+	 * Redireciona la ruta index.html al UI de Swagger
+	 * */
 	@GetMapping("/")
 	public RedirectView localRedirect() {
 		RedirectView redirectView = new RedirectView();

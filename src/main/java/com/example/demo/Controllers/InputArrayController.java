@@ -18,14 +18,19 @@ public class InputArrayController {
     ArraysService arraysService;
 
     /**
-     * Lista los items de inputs_array
+     * Retorna el numero de elementos de InputArray desde de una ruta GET
+     * @return Elementos de InputArray
      * */
     @GetMapping("")
     public ArrayList<InputArrayModel> getArrayInputs() {
         return this.arraysService.getArrays();
     }
 
-
+    /**
+     * Retorna el elemento de InputArray desde una ruta GET
+     * @param id ID de el modelo InputArray
+     * @return Elemento de InputArray
+     * */
     @GetMapping("/{id}")
     public Optional<InputArrayModel> getArrayInput(@PathVariable(value="id") Long id) {
         return this.arraysService.getByID(id);
@@ -33,9 +38,9 @@ public class InputArrayController {
 
 
     /**
-     *
-     * @param payload
-     * @return testt
+     * Retorna los elementos de InputArray ordenados desde una ruta POST
+     * @param payload Request body de la peticion
+     * @return Elementos de InputArray
      * */
     @RequestMapping(value = "/sort", method =  RequestMethod.POST)
     public ArrayList<Integer> getArrays(@Valid @RequestBody InputArrayRequestSort payload) {
@@ -43,7 +48,6 @@ public class InputArrayController {
         Long inputID = payload.getId();
         int iterations = payload.getIterations();
         InputArrayModel inputArray = this.arraysService.getByID(inputID).get();
-
         String[] test = ((String)inputArray.getArrayInputs()).split(",");
 
         return this.arraysService.order(test, iterations);
