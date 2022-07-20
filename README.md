@@ -7,11 +7,10 @@ En este repositorio se creó una simple aplicación web para exponer un servicio
 La Aplicación se encuentra desplegada en Heroku en la url: [https://aldeamopablotest.herokuapp.com](https://aldeamopablotest.herokuapp.com), 
 * Hay una especificación OpenAPI, usando una interfaz de usuario de Swagger
 
-### 
 
 ## Consumo de la API
 
-* Ejemplo Curl:
+* Ejemplo usando Curl:
 ``` 
 curl -X 'POST' \
   'https://aldeamopablotest.herokuapp.com/api/v1/input_array/sort' \
