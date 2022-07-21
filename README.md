@@ -63,5 +63,5 @@ El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se mue
 
 * **Controllers/** : Recibe los eventos de entrada mediante HTTP, Contiene reglas de gestión de eventos.
 * **Helpers/** : Clases o Interfaces reutilizables para el proyecto.
-* **Models/** :
+* **Models/** : Nos pertime enlazar nuestros datos mediante Objetos.
 * **Repositories/**: Enlaza los modelos para realizar consultas.
