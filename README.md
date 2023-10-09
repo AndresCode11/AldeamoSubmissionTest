@@ -4,7 +4,7 @@ En este repositorio se creó una simple aplicación web para exponer un servicio
 ## Despliegue
 
 ### Producción
-La Aplicación se encuentra desplegada en Heroku en la url: [https://aldeamopablotest.herokuapp.com](https://aldeamopablotest.herokuapp.com), 
+La Aplicación se encuentra desplegada en Heroku en la url: [CredibancoSpringBoot-env.eba-jhijkhmh.us-east-2.elasticbeanstalk.com]), 
 * Hay una especificación OpenAPI, usando una interfaz de usuario de Swagger.
 
 ### Local
@@ -12,7 +12,7 @@ En caso de querer desplegar la aplicacion en un entorno local, este debe contar 
 
 ```
 spring.datasource.url=jdbc:mysql://database-1.c6gsc5cni4xv.us-west-2.rds.amazonaws.com:3306/aldeamo_test
-spring.datasource.username=aldeamouser
+spring.datasource.username=user_test
 spring.datasource.password=password
 ```
 * 1: Clonar el repositorio
@@ -25,41 +25,15 @@ spring.datasource.password=password
 * Ejemplo usando Curl:
 ``` 
 curl -X 'POST' \
-  'https://aldeamopablotest.herokuapp.com/api/v1/input_array/sort' \
+  'CredibancoSpringBoot-env.eba-jhijkhmh.us-east-2.elasticbeanstalk.com
+/api/v1/card' \
   -H 'accept: */*' \
   -H 'Content-Type: application/json' \
-  -d '{
-  "id": 6,
-  "iterations": 10
-}'
+  '
 ``` 
 
 ## Estructura del proyecto
-El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se muestra la estructura de los archivos que se trabajaron, y como es la estructura del proyecto [link de archivos](https://github.com/AndresCode11/AldeamoSubmissionTest/tree/main/src/main/java/com/example/demo).
-``` 
-📦src
- ┣ 📂main
- ┃ ┣ 📂java
- ┃ ┃ ┗ 📂com
- ┃ ┃ ┃ ┗ 📂example
- ┃ ┃ ┃ ┃ ┗ 📂demo
- ┃ ┃ ┃ ┃ ┃ ┣ 📂Controllers
- ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜InputArrayController.java
- ┃ ┃ ┃ ┃ ┃ ┣ 📂Helpers
- ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ArrayOperations.java
- ┃ ┃ ┃ ┃ ┃ ┣ 📂Models
- ┃ ┃ ┃ ┃ ┃ ┃ ┣ 📜InputArrayModel.java
- ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜InputArrayRequestSort.java
- ┃ ┃ ┃ ┃ ┃ ┣ 📂Services
- ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ArraysService.java
- ┃ ┃ ┃ ┃ ┃ ┣ 📂repositories
- ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜ArraysRepository.java
- ┃ ┃ ┃ ┃ ┃ ┗ 📜DemoApplication.java
- ┃ ┗ 📂resources
- ┃ ┃ ┣ 📂static
- ┃ ┃ ┣ 📂templates
- ┃ ┃ ┗ 📜application.properties
-```
+El proyecto usa por defecto  la estructura de `SpringBoot` , en este caso se muestra la estructura de los archivos que se trabajaron, y como es la estructura del proyecto 
 
 * **Controllers/** : Recibe los eventos de entrada mediante HTTP, Contiene reglas de gestión de eventos.
 * **Helpers/** : Clases o Interfaces reutilizables para el proyecto.
